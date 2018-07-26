@@ -1,5 +1,5 @@
 <?php
-namespace Arndtteunissen\ColumnLayout\DataProcessing;
+namespace Arndtteunissen\ColumnLayoutArndtteunissen\DataProcessing;
 
 /*
  * This file is part of the package arndtteunissen/column-layout-arndtteunissen.
