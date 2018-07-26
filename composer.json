@@ -1,0 +1,31 @@
+{
+    "name": "arndtteunissen/column-layout-arndtteunissen",
+    "description": "Adds arndtteunissens column configuration to ext:column_layout",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/arndtteunissen/column-layout-arndtteunissen",
+	"keywords": [
+		"column_layout",
+		"arndtteunissen",
+    ],
+    "authors": [
+		{
+			"name": "Tim Schreiner",
+			"email": "schreiner.tim@gmail.com"
+		}
+    ],
+    "support": {
+        "issues": "https://github.com/arndtteunissen/column-layout-arndtteunissen/issues",
+        "docs": "https://docs.typo3.org/typo3cms/extensions/column_layout-arndtteunissen/"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "arndtteunissen/column-layout": "^0.5",
+        "codemonkey1988/responsive-images": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Arndtteunissen\\ColumnLayoutArndtteunissen\\": "Classes/"
+        }
+    }
+}
