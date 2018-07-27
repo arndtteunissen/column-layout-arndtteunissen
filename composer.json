@@ -20,7 +20,7 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "arndtteunissen/column-layout": "^0.4",
+        "arndtteunissen/column-layout": "^0.4 || ^0.5",
         "codemonkey1988/responsive-images": "^2.0"
     },
     "autoload": {
