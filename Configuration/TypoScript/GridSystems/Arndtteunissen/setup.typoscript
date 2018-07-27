@@ -6,4 +6,14 @@ lib.tx_column_layout.rendering {
             as = column_classes
         }
     }
+    column.variables {
+        maxColumns = TEXT
+        maxColumns.value = {$lib.tx_column_layout.rendering.column.maxColumns}
+
+        imageVariantKeyPrefix = TEXT
+        imageVariantKeyPrefix.value = {$lib.tx_column_layout.rendering.column.imageVariantKeyPrefix}
+
+        imageVariantKeyFull = TEXT
+        imageVariantKeyFull.value = {$lib.tx_column_layout.rendering.column.imageVariantKeyFull}
+    }
 }

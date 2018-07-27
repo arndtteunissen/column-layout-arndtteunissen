@@ -1,5 +1,11 @@
 lib.tx_column_layout.rendering {
-    layoutRootPath = EXT:column_layout_arndtteunissen/Resources/Private/Layouts/Custom/
-    partialRootPath = EXT:column_layout_arndtteunissen/Resources/Private/Partials/Custom/
-    templateRootPath = EXT:column_layout_arndtteunissen/Resources/Private/Templates/Custom/
+    layoutRootPath = EXT:column_layout_arndtteunissen/Resources/Private/Layouts/Arndtteunissen/
+    partialRootPath = EXT:column_layout_arndtteunissen/Resources/Private/Partials/Arndtteunissen/
+    templateRootPath = EXT:column_layout_arndtteunissen/Resources/Private/Templates/Arndtteunissen/
+
+    column {
+        maxColumns = 12
+        imageVariantKeyPrefix = col
+        imageVariantKeyFull = full
+    }
 }

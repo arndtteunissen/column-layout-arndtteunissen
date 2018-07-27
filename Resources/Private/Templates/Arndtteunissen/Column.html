@@ -1,16 +1,21 @@
 <html data-namespace-typo3-fluid="true"
-      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:r="http://typo3.org/ns/Codemonkey1988/ResponsiveImages/ViewHelpers">
 
 <f:if condition="{settings.row_end}">
-    <f:render partial="Row/End" arguments="{settings:settings}"/>
+    <f:render partial="Row/End" arguments="{_all}"/>
 </f:if>
 
 <f:if condition="{settings.row_begin}">
-    <f:render partial="Row/Begin" arguments="{settings:settings}"/>
+    <f:render partial="Row/Begin" arguments="{_all}"/>
 </f:if>
 
-<div class="cell {column_classes}{additionalColumnClasses}">
-    <f:render renderable="{settings.content}"/>
+<div class="{column_classes}{additionalColumnClasses}">
+    <f:variable name="colWidth" value="{f:if(condition:column_layout.sDEF.large_width,then:column_layout.sDEF.large_width,else:maxColumns)}" />
+
+    <r:loadRegister key="IMAGE_VARIANT_KEY" value="{f:if(condition:column_layout.sDEF.row_fullwidth,then:imageVariantKeyFull,else:'{imageVariantKeyPrefix}{colWidth}')}">
+        <f:render renderable="{settings.content}"/>
+    </r:loadRegister>
 </div>
 
 </html>
