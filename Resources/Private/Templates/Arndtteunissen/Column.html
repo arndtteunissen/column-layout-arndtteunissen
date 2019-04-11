@@ -10,7 +10,7 @@
     <f:render partial="Row/Begin" arguments="{_all}"/>
 </f:if>
 
-<div class="{column_classes}{additionalColumnClasses}">
+<div class="cell {column_classes}{additionalColumnClasses}">
     <f:variable name="colWidth" value="{f:if(condition:column_layout.sDEF.large_width,then:column_layout.sDEF.large_width,else:maxColumns)}" />
 
     <r:loadRegister key="IMAGE_VARIANT_KEY" value="{f:if(condition:column_layout.sDEF.row_fullwidth,then:imageVariantKeyFull,else:'{imageVariantKeyPrefix}{colWidth}')}">
